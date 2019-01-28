@@ -65,29 +65,142 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
-for(let i = 0; i < inventory.length; i++) {
-    
-}
+//Not sure about this one//
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
+let lastCar = [id: 50, car_make: "Lincoln", car_model: "Town Car", car_year: 1999];
 console.log();
+inventory[49];
+//Not sure if it's right but I looked up the index to find the last car in the inventory//
+
+//or last item in array//
+inventory[inventory.length-1];
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-console.log();
+let carModels = [
+      "300M"
+      1: "4000CS Quattro"
+      2: "525"
+      3: "6 Series"
+      4: "Accord"
+      5: "Aerio"
+      6: "Bravada"
+      7: "Camry"
+      8: "Cavalier"
+      9: "Ciera"
+      10: "Defender Ice Edition"
+      11: "E-Class"
+      12: "Econoline E250"
+      13: "Escalade"
+      14: "Escort"
+      15: "Esprit"
+      16: "Evora"
+      17: "Express 1500"
+      18: "Familia"
+      19: "Fortwo"
+      20: "G35"
+      21: "GTO"
+      22: "Galant"
+      23: "Intrepid"
+      24: "Jetta"
+      25: "LSS"
+      26: "MR2"
+      27: "Magnum"
+      28: "Miata MX-5"
+      29: "Montero Sport"
+      30: "Mustang"
+      31: "Prizm"
+      32: "Q"
+      33: "Q7"
+      34: "R-Class"
+      35: "Ram Van 1500"
+      36: "Ram Van 3500"
+      37: "Sebring"
+      38: "Skylark"
+      39: "TT"
+      40: "Talon"
+      41: "Topaz"
+      42: "Town Car"
+      43: "Windstar"
+      44: "Wrangler"
+      45: "Wrangler"
+      46: "XC70"
+      47: "Yukon"
+      48: "riolet"
+];
+
+carModels.sort();
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
-let carYears = [];
-console.log();
+let carYears = [
+      '2009',
+      '2001',
+      '2010',
+      '1983',
+      '1990',
+      '1995',
+      '2009',
+      '1987',
+      '1996',
+      '2000',
+      '2004',
+      '2004',
+      '1997',
+      '1999',
+      '2000',
+      '2001',
+      '1987',
+      '1995',
+      '1994',
+      '1985',
+      '2003',
+      '1997',
+      '1992',
+      '2003',
+      '2005',
+      '2005',
+      '2000',
+      '2005',
+      '1993',
+      '2010',
+      '1964',
+      '1999',
+      '2011',
+      '1991',
+      '2000',
+      '2003',
+      '1997',
+      '1992',
+      '1998',
+      '2012',
+      '1965',
+      '1996',
+      '2009',
+      '2012',
+      '2008',
+      '1995',
+      '2007',
+      '2008',
+      '1996',
+      '1999'
+];
+console.log(carYears);
+
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-let oldCars =[];
-console.log(); 
+let oldCars =["2009", "2001", "2010", "2009", "2004", "2004", "2001", "2003", "2003", "2005", "2005", "2005", "2010", "2011", "2003", "2012", "2009", "2012", "2008", "2007", "2008"];
+console.log(oldCars.length); 
+
+carYears.filter(function(item) {
+      return item > '2000';
+});
+
+//filter gives the cars 2001 & up...I put the new info into new array [oldCars]. Not sure if that's right//
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
