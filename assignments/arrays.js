@@ -72,6 +72,10 @@ console.log(`Car 33 is a *car year goes here* *car make goes here* *car model go
 let lastCar = 0;
 console.log();
 
+let lastCar = [id: 50, car_make: "Lincoln", car_model: "Town Car", car_year: 1999];
+inventory[49];
+console.log();
+
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];

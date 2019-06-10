@@ -30,6 +30,7 @@ const intern2 = {
   "email": "kdiben1@tinypic.com",
   "firstName": "Kennan",
   "gender": "", 
+  "speak": 'Hello',
 }
 
 const intern3 = {
@@ -52,7 +53,7 @@ const intern5 = {
   "email": "adaine5@samsung.com",
   "firstName": "Antonietta",
   "gender": "F", 
-
+  "multiplyNums":  2 * 2
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -60,33 +61,35 @@ const intern5 = {
 
 // Mitzi's name
 
-console.log(intern2.firstName);
+console.log('first name:', intern2.firstName);
 
 // Kennan's ID
 
-console.log(intern3.id);
+console.log('intern id:', intern3.id);
 
 // Keven's email
 
-console.log(intern3.email);
+console.log('intern email:', intern3.email);
 
 // Gannie's name
 
-console.log(intern4.firstName);
+console.log('intern 4 first name:', intern4.firstName);
 
 // Antonietta's Gender
 
-console.log(intern5.gender);
+console.log('intern 5 gender:', intern5.gender);
 
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
 
+
+console.log(intern2.speak + ' my name is ' + intern2.firstName);
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+
+console.log('intern 5 multiplication:', intern5.multiplyNums)
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
